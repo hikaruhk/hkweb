@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HK Site</title>
+    <meta charset="utf-8" />
+
+    <script src="app/scripts/angular.min.js"></script>
+    <script src="app/scripts/angular-route.min.js"></script>
+    <script src="app/scripts/ngDialog/ngDialog.min.js"></script>
+
+    <link rel="stylesheet" href="app/scripts/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="app/scripts/bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="app/scripts/ngDialog/ngDialog.min.css" />
+    <link rel="stylesheet" href="app/scripts/ngDialog/ngDialog-theme-default.min.css" />
+
+    <script src="app/app.js"></script>
+    <script src="app/controller/mainController.js"></script>
+    <script src="app/directives/common.js"></script>
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <base href="/" />
+</head>
+<body ng-app="app">
+    <div ng-controller="mainController as main" class="mainContainer">
+
+        <navigation></navigation>
+        
+        <div class="mainBodyContainer">
+            <div ng-view></div>
+        </div>
+        
+        <footer-navigation></footer-navigation>
+    </div>
+</body>
+</html>
